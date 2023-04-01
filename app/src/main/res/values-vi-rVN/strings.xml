@@ -1,0 +1,110 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Nhận hàng</string>
+    <string name="btn_ok">Xác nhận</string>
+    <string name="btn_cancel">Hủy bỏ</string>
+    <string name="btn_print">In</string>
+    <string name="tt_mvl">Mã vật liệu</string>
+    <string name="tt_ten">Tên vật liệu</string>
+    <string name="tt_quycach">Quy cách</string>
+    <string name="tt_solo">Số lô</string>
+    <string name="tt_soluong">Số lượng</string>
+    <string name="tt_hangmuc">Hạng mục</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="cancel_all">Hủy tất cả</string>
+
+    /* activity_main */
+    <string name="main_id">Tài khoản：</string>
+    <string name="main_pwd">Mật khẩu：</string>
+    <string name="main_ok">Xác nhận</string>
+    <string name="main_cancel">Hủy bỏ</string>
+    <string name="main_E01">Xin nhập số tài khoản</string>
+    <string name="main_E02">Tài khoản hoặc mật khẩu không đúng</string>
+    <string name="main_E03">Liên kết máy chủ thất bại</string>
+    <string name="main_language">Ngôn ngữ</string>
+    <string name="main_stay_logged">Lưu tài khoản</string>
+
+    /*check version*/
+    <string name="ver_curr_version">Phiên bản hiện tại : </string>
+    <string name="ver_new_version">Phiên bản mới：</string>
+    <string name="ver_install">Xin hãy cài đặt!</string>
+    <string name="ver_soft_update">Cập nhật phần mềm</string>
+    <string name="ver_update">Cập nhật</string>
+    <string name="ver_downloading">Đang cập nhật</string>
+    <string name="ver_please_wait">Xin đợi...</string>
+
+    /* activity_menu */
+    <string name="menu_welcome">Welcome</string>
+    <string name="menu_btn01">Nghiệm thu phiếu\nbáo hàng</string>
+    <string name="menu_btn02">Nghiệm thu\nphiếu phát liệu</string>
+
+    /* activity_qr210 */
+    <string name="qr210_main">Nghiệm thu phiếu báo hàng</string>
+    <string name="qr210_head1">Mã đơn\nbáo hàng</string>
+    <string name="qr210_head2">Loại vật liệu</string>
+    <string name="qr210_title1">STT</string>
+    <string name="qr210_title2">MVL\nQuy cách</string>
+    <string name="qr210_title3">Số lượng đã phát\nSL đã nghiệm thu</string>
+    <string name="qr210_btn01">Tải lên\nhệ thống</string>
+    <string name="qr210_btn02">Xóa\ntất cả</string>
+    /* message_qr210 */
+    <string name="qr210_msg01">Tra cứu đơn báo hàng thất bại </string>
+    <string name="qr210_msg02">Mã vạch bị sai</string>
+    <string name="qr210_msg03">Quét thất bại</string>
+    <string name="qr210_msg04">Không có vật liệu này </string>
+    <string name="qr210_msg05">Vượt quá số lượng </string>
+    <string name="qr210_msg06">Xóa dữ liệu</string>
+    <string name="qr210_msg07">Xác nhận xóa dòng dữ liệu này? </string>
+    <string name="qr210_msg08">Xác nhận tải dữ liệu</string>
+    <string name="qr210_msg09">Bạn có muốn tải lên tất cả dữ liệu không?</string>
+    <string name="qr210_msg10">Tải lên thành công</string>
+    <string name="qr210_msg11">Tải lên không thành công </string>
+    <string name="qr210_msg12">Xác nhận xóa dữ liệu</string>
+    <string name="qr210_msg13">Bạn có muốn xóa tất cả dữ liệu không?</string>
+    <string name="qr210_msg14">Không có mã tem này trong danh sách phát hàng</string>
+    <string name="qr210_msg15">Đã nghiệm thu, không thể xóa bỏ</string>
+    <string name="qr210_msg16">Mã đơn chứng từ không được trống</string>
+
+
+    /* activity_qr210_dialog01 */
+    <string name="qr210_dialog01_title1">STT</string>
+    <string name="qr210_dialog01_title2">Số lô</string>
+    <string name="qr210_dialog01_title3">Số lượng</string>
+    <string name="qr210_dialog01_title4">Nghiệm thu</string>
+    <string name="qr210_dialog01_btn01">Xác nhận</string>
+
+    /* activity_qr230 */
+    <string name="qr230_main">Nghiệm thu phiếu phát liệu</string>
+    <string name="qr230_head1">Mã phiếu\nphát liệu</string>
+    <string name="qr230_title1">S\nT\nT</string>
+    <string name="qr230_title2">MVL-Tên\nQuy cách</string>
+    <string name="qr230_title3">Số lô\nSL đã phát\nSL đã nhận</string>
+    <string name="qr230_btn01">Tải lên\nhệ thống</string>
+    <string name="qr230_btn02">Xóa\ntất cả</string>
+    /* message_qr230 */
+    <string name="qr230_msg01">Tra cứu phiếu phát liệu thất bại</string>
+    <string name="qr230_msg02">Phiếu phát liệu này không cần quét</string>
+    <string name="qr230_msg03">Không có dữ liệu phát liệu</string>
+
+    /* message_qr231 */
+    <string name="qr231_main">Phiếu lãnh hàng</string>
+    <string name="qr231_head1">Mã phiếu lãnh hàng</string>
+    <string name="qr231_msg01">Tra cứu phiếu lãnh hàng thất bại</string>
+    <string name="qr231_msg02">Phiếu lãnh hàng này đã kết chuyển hoặc không có vật liệu cần quét mã vạch</string>
+    <string name="qr231_msg03">Mã tem đã được quét,xin kiểm tra lại</string>
+    <string name="qr231_msg04">Phiếu lãnh hàng này đã kết chuyển, Không thể sửa đổi/xóa bỏ</string>
+    <string name="qr231_title3">Số lượng đã xin\nSL đã nhận</string>
+
+    \*qrcode_print *\
+    <string name="btnQRcodePrint">In tách tem</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_connecting">connecting&#8230;</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="content_description">contentDescription</string>
+    <string name="changePrintQty">Sửa đổi số lượng</string>
+    <string name="enterQty">Hãy nhập số lượng muốn thay đổi</string>
+    <string name="qtyNotMatch">SL không phù hợp</string>
+    <string name="qtyCal">SL gốc - Tổng SL tem</string>
+    <string name="label_split">Số tờ tem muốn tách</string>
+
+    <string name="E23">Mã vạch không thuộc vật liệu trong kho</string>
+</resources>

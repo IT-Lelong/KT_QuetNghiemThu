@@ -1,0 +1,110 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Nhận hàng</string>
+    <string name="btn_ok">確定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_print">列印</string>
+    <string name="tt_mvl">料號</string>
+    <string name="tt_ten">物料名稱</string>
+    <string name="tt_quycach">規格</string>
+    <string name="tt_solo">批號</string>
+    <string name="tt_soluong">數量</string>
+    <string name="tt_hangmuc">項目</string>
+    <string name="select_all">全部選擇</string>
+    <string name="cancel_all">取消全部</string>
+
+    /* activity_main */
+    <string name="main_id">帳號：</string>
+    <string name="main_pwd">密碼：</string>
+    <string name="main_ok">確定</string>
+    <string name="main_cancel">取消</string>
+    <string name="main_E01">請輸入帳號</string>
+    <string name="main_E02">帳號密碼錯誤</string>
+    <string name="main_E03">連線錯誤</string>
+    <string name="main_language">語言</string>
+    <string name="main_stay_logged">保持登入</string>
+
+    /*check version*/
+    <string name="ver_curr_version">當前版本: </string>
+    <string name="ver_new_version">新版本：</string>
+    <string name="ver_install">請安裝!</string>
+    <string name="ver_soft_update">軟件更新</string>
+    <string name="ver_update">更新</string>
+    <string name="ver_downloading">正在下載</string>
+    <string name="ver_please_wait">請稍後...</string>
+
+    /* activity_menu */
+    <string name="menu_welcome">歡迎</string>
+    <string name="menu_btn01">掃描驗收發料作業</string>
+    <string name="menu_btn02">發料單掃描驗收作業</string>
+
+    /* activity_qr210 */
+    <string name="qr210_main">報料單發料作業</string>
+    <string name="qr210_head1">報料單號</string>
+    <string name="qr210_head2">發料類別</string>
+    <string name="qr210_title1">項次</string>
+    <string name="qr210_title2">品號\n規格</string>
+    <string name="qr210_title3">已掃數量\n已驗收量</string>
+    <string name="qr210_btn01">上傳</string>
+    <string name="qr210_btn02">清除</string>
+    /* message_qr210 */
+    <string name="qr210_msg01">報料單查詢失敗</string>
+    <string name="qr210_msg02">條碼錯誤</string>
+    <string name="qr210_msg03">掃描失敗</string>
+    <string name="qr210_msg04">無此料號</string>
+    <string name="qr210_msg05">超出數量</string>
+    <string name="qr210_msg06">刪除資料</string>
+    <string name="qr210_msg07">確定刪除此筆資料?</string>
+    <string name="qr210_msg08">上傳資料</string>
+    <string name="qr210_msg09">確定上傳全部資料?</string>
+    <string name="qr210_msg10">上傳成功</string>
+    <string name="qr210_msg11">上傳失敗</string>
+    <string name="qr210_msg12">清除資料</string>
+    <string name="qr210_msg13">確定清除全部資料?</string>
+    <string name="qr210_msg14">無此標籤</string>
+    <string name="qr210_msg15">此資料已驗收，不能刪除</string>
+    <string name="qr210_msg16">單據編號不能空白</string>
+
+    /* activity_qr210_dialog01 */
+    <string name="qr210_dialog01_title1">項次</string>
+    <string name="qr210_dialog01_title2">批號</string>
+    <string name="qr210_dialog01_title3">數量</string>
+    <string name="qr210_dialog01_title4">驗收</string>
+    <string name="qr210_dialog01_btn01">確定</string>
+
+    /* activity_qr230 */
+    <string name="qr230_main">發料單掃瞄作業</string>
+    <string name="qr230_head1">發料單號</string>
+    <string name="qr230_title1">項次</string>
+    <string name="qr230_title2">品號-名稱\n規格</string>
+    <string name="qr230_title3">批號\n已掃數量\n已驗收量</string>
+    <string name="qr230_btn01">上傳</string>
+    <string name="qr230_btn02">清除</string>
+
+    /* message_qr230 */
+    <string name="qr230_msg01">發料單查詢失敗</string>
+    <string name="qr230_msg02">此發料單無需掃描</string>
+    <string name="qr230_msg03">無此筆資料</string>
+
+    /* message_qr231 */
+    <string name="qr231_main">領料單</string>
+    <string name="qr231_head1">領料單號</string>
+    <string name="qr231_msg01">領料單查詢失敗</string>
+    <string name="qr231_msg02">此領料單無需掃描 或已結轉</string>
+    <string name="qr231_msg03">標籤已掃描,請檢查</string>
+    <string name="qr231_msg04">此領料單已結轉，不可修改或刪除</string>
+    <string name="qr231_title3">已申請量\n已收量</string>
+
+    \*qrcode_print *\
+    <string name="btnQRcodePrint">標籤列印</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_connecting">connecting&#8230;</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="content_description">contentDescription</string>
+    <string name="changePrintQty">修改數量</string>
+    <string name="enterQty">請輸入數量</string>
+    <string name="qtyNotMatch">數量不符</string>
+    <string name="qtyCal">原數量 - 條碼總數</string>
+    <string name="label_split">標籤要拆張數</string>
+
+    <string name="E23">無此標籤</string>
+</resources>
