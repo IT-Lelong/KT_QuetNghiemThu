@@ -788,8 +788,8 @@ public class qr230 extends AppCompatActivity {
             DataOutputStream writer = new DataOutputStream(os);
             Cursor c = db.getall();
             Cursor c1 = db.getallb();
-            JSONArray jarray = cur2Json(c);
-            JSONArray jarray1 = cur2Json(c1);
+            JSONArray jarray = cur2Json(c,"qr230_table");
+            JSONArray jarray1 = cur2Json(c1,"qr230b_table");
             JSONObject jobejct = new JSONObject();
             jobejct.put("QR_IMN07", ID);
             jobejct.put("QR_IMN01", head1.getText());
@@ -938,7 +938,7 @@ public class qr230 extends AppCompatActivity {
     }
 
     //Cursor 轉 Json
-    public JSONArray cur2Json(Cursor cursor) {
+    public JSONArray cur2Json(Cursor cursor,String name_table) {
         JSONArray resultSet = new JSONArray();
         cursor.moveToFirst();
         while (cursor.isAfterLast() == false) {
@@ -947,8 +947,29 @@ public class qr230 extends AppCompatActivity {
             for (int i = 0; i < totalColumn; i++) {
                 if (cursor.getColumnName(i) != null) {
                     try {
-                        rowObject.put(cursor.getColumnName(i),
-                                cursor.getString(i));
+                        //GET DOUBLE cột số thâp phân
+                        if (name_table.equals("qr230_table"))
+                        {
+                            if(i== 3 || i==4|| i== 5)
+                            {
+                                rowObject.put(cursor.getColumnName(i),cursor.getDouble(i));
+                            }
+                            else {
+                                rowObject.put(cursor.getColumnName(i),cursor.getString(i));
+                            }
+                        }
+                        else
+                        {
+                            if(i== 4)
+                            {
+                                rowObject.put(cursor.getColumnName(i),cursor.getDouble(i));
+                            }
+                            else {
+                                rowObject.put(cursor.getColumnName(i),cursor.getString(i));
+                            }
+                        }
+                        //rowObject.put(cursor.getColumnName(i),
+                                //cursor.getString(i));
                     } catch (Exception e) {
                     }
                 }
