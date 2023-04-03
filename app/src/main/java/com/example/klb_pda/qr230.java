@@ -59,7 +59,7 @@ import java.util.Locale;
 public class qr230 extends AppCompatActivity {
 
     String ID, g_server;
-    TextView head1;
+    TextView head1,tv_sfp01;
     ListView list01;
     Button btnupload, btnclear;
     UIHandler uiHandler;
@@ -125,6 +125,7 @@ public class qr230 extends AppCompatActivity {
         Bundle getbundle = getIntent().getExtras();
         ID = getbundle.getString("ID");
         g_server = getbundle.getString("SERVER");
+        tv_sfp01 = (TextView) findViewById(R.id.tv_sfp01);
         head1 = (TextView) findViewById(R.id.qr230_head1);
         list01 = (ListView) findViewById(R.id.qr230_list01);
         btnupload = (Button) findViewById(R.id.qr230_btnupload);
@@ -132,6 +133,7 @@ public class qr230 extends AppCompatActivity {
         btnupload.setOnClickListener(btnuploadlistener);
         btnclear.setOnClickListener(btnclearlistener);
         list01.setOnItemClickListener(lsit01listener);
+        tv_sfp01.setOnClickListener(tvSfp01Listener);
 
         uiHandler = new UIHandler();
         uiHandler.sendEmptyMessage(3);
@@ -149,7 +151,14 @@ public class qr230 extends AppCompatActivity {
         //------------------------掃描機 Máy quét (E)----------------------------------//
 
     }
-
+    private View.OnClickListener tvSfp01Listener= new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //head1.getText().toString().trim()
+            String g_sfb01= "";
+            if(!g_sfb01.equals("")){updateData(g_sfb01);}
+        }
+    };
     //取得調撥單內容
     private void updateData(final String dataStr) {
         Thread scan = new Thread(new Runnable() {
@@ -920,7 +929,7 @@ public class qr230 extends AppCompatActivity {
                     barcodeListData.add(
                             new Barcode_listData(Integer.parseInt(cursor.getString(1)),
                                     cursor.getString(2),
-                                    Double.parseDouble(cursor.getString(3)),
+                                    cursor.getDouble(3),
                                     Boolean.parseBoolean(cursor.getString(4)),
                                     cursor.getString(6),
                                     cursor.getString(5),

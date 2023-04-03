@@ -234,7 +234,7 @@ public class qr230DB {
 
     public Cursor getdetail() {
         try {
-            return db.rawQuery("SELECT rowid _id,qr230_01,qr230_02,qr230_03,cast(qr230_04 as string) qr230_04,qr230_05,qr230_06,qr230_07,qr230_08,qr230_09,qr230_10,qr230_11 " +
+            return db.rawQuery("SELECT rowid _id,qr230_01,qr230_02,qr230_03,cast(qr230_04 as string) qr230_04,cast(qr230_05 as string) qr230_05,cast(qr230_06 as string) qr230_06,qr230_07,qr230_08,qr230_09,qr230_10,qr230_11 " +
                     " FROM " + TABLE_NAME + " ORDER BY " + qr230_01 + " ASC", null);
         } catch (Exception e) {
             Cursor c = null;
